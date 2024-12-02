@@ -1,0 +1,89 @@
+.v-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+    gap: 20px; /* Add some space between items for better spacing */
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 500px; /* Limit the maximum size of the image */
+    border: 8px solid rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the image in its container */
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Adjust cropping as needed */
+  }
+  
+  .v-right {
+    gap: 0.5rem;
+    flex: 1; /* Allow the right content to take up remaining space */
+    max-width: 600px; /* Optional: Limit the width on larger screens */
+  }
+  
+  .accordion {
+    margin-top: 2rem;
+    border: none;
+  }
+  
+  .accordionitem {
+    background-color: white;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .accordionbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .icon {
+    padding: 10px;
+    background-color: #eeeeff;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 1024px) {
+    .v-container {
+      flex-direction: column; /* Stack the image and content vertically */
+      align-items: center; /* Center-align content */
+      gap: 20px; /* Add spacing between stacked items */
+    }
+  
+    .image-container {
+      max-width: 100%; /* Allow the image container to scale to full width */
+      margin: 0; /* Remove extra margins */
+    }
+  
+    .v-right {
+      text-align: center; /* Center-align text content */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .v-container {
+      padding: 0 20px; /* Add some padding for smaller screens */
+    }
+
+    .accordionbtn .primaryText{
+
+        font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,68 @@
+/* Header.css */
+.h-wrapper {
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 100;
+  position:relative;
+}
+
+.h-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.h-menu {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: -100%; /* Initially hidden for mobile */
+  top: 0;
+  background-color: #fff;
+  height: 100vh;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+}
+
+.h-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+.h-menu .button a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (min-width: 801px) {
+  .h-menu {
+      position: static;
+      height: auto;
+      width: auto;
+      flex-direction: row;
+      box-shadow: none;
+      right: 0;
+  }
+
+  .menu-icon {
+      display: none;
+  }
+}
