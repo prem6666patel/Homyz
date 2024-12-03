@@ -25,7 +25,7 @@ const Hero = () => {
 
           <div className="search-bar">
             <input type="text" />
-            <button className="button">search</button>
+            <button className="button btn">search</button>
           </div>
 
           <div className="flexCenter status">
