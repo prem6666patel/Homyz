@@ -55,18 +55,18 @@ const Header = () => {
           style={getMenuStyles()}
           ref={menuRef}
         >
-          <a href="#residencies" onClick={() => setMenuOpened(false)}>
+          <Link to="/res" onClick={() => setMenuOpened(false)}>
             Residencies
-          </a>
-          <a href="#our-value" onClick={() => setMenuOpened(false)}>
+          </Link>
+          <Link to="/value" onClick={() => setMenuOpened(false)}>
             Our Value
-          </a>
-          <a href="#contact-us" onClick={() => setMenuOpened(false)}>
+          </Link>
+          <Link to="/contactUs" onClick={() => setMenuOpened(false)}>
             Contact Us
-          </a>
-          <a href="#get-started" onClick={() => setMenuOpened(false)}>
+          </Link>
+          <Link to="/get" onClick={() => setMenuOpened(false)}>
             Get Started
-          </a>
+          </Link>
           <button className="button" onClick={() => setMenuOpened(false)}>
             <Link to="/contactBtn">Contact</Link>
           </button>

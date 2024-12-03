@@ -36,6 +36,42 @@ function App() {
         </>
       ),
     },
+    {
+      path: "/contactUs",
+      element: (
+        <>
+          <Header />
+          <Contact />
+        </>
+      ),
+    },
+    {
+      path: "/value",
+      element: (
+        <>
+          <Header />
+          <Value />
+        </>
+      ),
+    },
+    {
+      path: "/res",
+      element: (
+        <>
+          <Header />
+          <Residencies />
+        </>
+      ),
+    },
+    {
+      path: "/get",
+      element: (
+        <>
+          <Header />
+          <Getstarted />
+        </>
+      ),
+    },
   ]);
 
   return <RouterProvider router={router}></RouterProvider>;
