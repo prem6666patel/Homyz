@@ -74,12 +74,14 @@
     border: 3px solid rgba(120, 120, 120, 0.374);
     padding: 0.5rem 1rem;
     justify-content: space-around;
+    
 
     input{
 
         border: none;
         outline: none;
         font-size: 1rem;
+        
     }
 
 }

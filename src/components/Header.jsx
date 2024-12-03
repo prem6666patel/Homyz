@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -67,7 +68,7 @@ const Header = () => {
             Get Started
           </a>
           <button className="button" onClick={() => setMenuOpened(false)}>
-            <a href="#contact">Contact</a>
+            <Link to="/contactBtn">Contact</Link>
           </button>
         </div>
 
