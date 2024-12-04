@@ -55,6 +55,9 @@ const Header = () => {
           style={getMenuStyles()}
           ref={menuRef}
         >
+          <Link to="/" onClick={() => setMenuOpened(false)}>
+            Home
+          </Link>
           <Link to="/res" onClick={() => setMenuOpened(false)}>
             Residencies
           </Link>
